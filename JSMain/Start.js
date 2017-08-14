@@ -2,6 +2,10 @@
  Created by BigArt on 08.07.2017.
  */
 "use strict";
+function fail() {
+    check=1;
+}
+var check=0.5;
 function start() {
     /*document.body.innerHTML = "<canvas id=\"a\" width=\"300\" height=\"225\"></canvas>";
     var b_canvas = document.getElementById("a");
@@ -13,6 +17,6 @@ function start() {
         "<canvas id=\"a\" width=\"300\" height=\"225\"> Не уверен, но это для теста </canvas>\n";
     var b_canvas = document.getElementById("a");
     var b_context = b_canvas.getContext("2d");
-    b_context.color='red';
+    b_context.globalAlpha=check;
     b_context.fillRect(50, 25, 150, 100);
 }
