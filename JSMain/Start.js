@@ -19,4 +19,5 @@ function start() {
     var b_context = b_canvas.getContext("2d");
     b_context.globalAlpha=check;
     b_context.fillRect(50, 25, 150, 100);
+
 }
