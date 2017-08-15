@@ -25,18 +25,19 @@ function Layer(doubleArrArrFact, activFunc) {
     };
 }
 
-function Neuro(fileNeuroFact) {
-    var test="";
+function Neuro(stringData) {
+    var lines=stringData.split("\n");
+    console.dir(lines);
+
+}
+
+function loadNeuro(fileNeuroFact) {
     $.ajax({
         url: fileNeuroFact,
         dataType: "text",
         async: true,
         success: function(msg){
-            test = msg;
-            alert('Содержимое файла: '+test);
-            console.log(test);
-            var lines=test.split("\n");
-            console.log(lines);
+            Neuro(msg);
         }
     });
 
