@@ -13,7 +13,16 @@ function Neuron(doubleArrFact) {
 function Layer(doubleArrArrFact, activFunc) {
     var neurons=[];
     for (var i=0; i<doubleArrArrFact.length;++i){
+        neurons[i]=new Neuron(doubleArrArrFact[i])
     }
+    this.work=new function (doubleArrInput) {
+        var doubleArrOut=[];
+        for(var i=0;i<neurons.length;++i){
+            doubleArrOut[i]=neurons[i].out(doubleArrInput);
+            doubleArrOut[i]=activFunc(doubleArrInput[i]);
+        }
+        return doubleArrOut
+    };
 }
 
 function calaul(DoubleArrData, outLength) {
