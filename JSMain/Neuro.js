@@ -10,6 +10,12 @@ function Neuron(doubleArrFact) {
     }
 }
 
+function Layer(doubleArrArrFact, activFunc) {
+    var neurons=[];
+    for (var i=0; i<doubleArrArrFact.length;++i){
+    }
+}
+
 function calaul(DoubleArrData, outLength) {
 
 }
