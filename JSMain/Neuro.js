@@ -25,6 +25,23 @@ function Layer(doubleArrArrFact, activFunc) {
     };
 }
 
+function Neuro(fileNeuroFact) {
+    var test="";
+    $.ajax({
+        url: fileNeuroFact,
+        dataType: "text",
+        async: true,
+        success: function(msg){
+            test = msg;
+            alert('Содержимое файла: '+test);
+            console.log(test);
+            var lines=test.split("\n");
+            console.log(lines);
+        }
+    });
+
+}
+
 function calaul(DoubleArrData, outLength) {
 
 }

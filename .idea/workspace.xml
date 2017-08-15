@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="446143c2-221b-4f21-acc8-3bb929ce17d6" name="Default" comment="Небольшие правки">
+    <list default="true" id="446143c2-221b-4f21-acc8-3bb929ce17d6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSMain/Neuro.js" afterPath="$PROJECT_DIR$/JSMain/Neuro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSMain/Start.js" afterPath="$PROJECT_DIR$/JSMain/Start.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +20,20 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="437">
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Neuro.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NeuroFact/Neuro.txt">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="95591">
+              <caret line="13" column="110947" lean-forward="false" selection-start-line="13" selection-start-column="110947" selection-end-line="13" selection-end-column="110947" />
             </state>
           </provider>
         </entry>
@@ -39,8 +51,8 @@
       <file leaf-file-name="Start.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JSMain/Start.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -49,8 +61,8 @@
       <file leaf-file-name="Neuro.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JSMain/Neuro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="646">
+              <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -91,8 +103,8 @@
         <option value="$PROJECT_DIR$/Main.html" />
         <option value="$PROJECT_DIR$/CSS/mainCSS.css" />
         <option value="$PROJECT_DIR$/JSMain/Start.js" />
-        <option value="$PROJECT_DIR$/JSMain/Neuro.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/JSMain/Neuro.js" />
       </list>
     </option>
   </component>
@@ -144,6 +156,11 @@
               <item name="BigArty.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigArty.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="JSMain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigArty.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigArty.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="NeuroFact" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BigArty.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -598,7 +615,7 @@
       <workItem from="1502706398328" duration="1586000" />
       <workItem from="1502722553529" duration="610000" />
       <workItem from="1502789281714" duration="4841000" />
-      <workItem from="1502800929285" duration="2734000" />
+      <workItem from="1502800929285" duration="4272000" />
     </task>
     <task id="LOCAL-00001" summary="еревод со страницы на скрипт">
       <created>1502569357837</created>
@@ -768,11 +785,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502806198193</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Небольшие правки">
+      <created>1502806322935</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1502806322935</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37932000" />
+    <option name="totallyTimeSpent" value="39470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -863,16 +887,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="181" lean-forward="false" selection-start-line="56" selection-start-column="181" selection-end-line="56" selection-end-column="181" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/mainCSS.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1204,16 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/mainCSS.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1224,16 +1228,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JSMain/Start.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuroFact/Neuro.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="95591">
+          <caret line="13" column="110947" lean-forward="false" selection-start-line="13" selection-start-column="110947" selection-end-line="13" selection-end-column="110947" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JSMain/Neuro.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="646">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding />
         </state>
       </provider>
