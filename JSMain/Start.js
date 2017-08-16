@@ -6,8 +6,12 @@
 function fail() {
     check = 1;
 }
+function loading(){
+    //Сюда нужно написать функцию вывода на экран слова загрузка. Желательно найти гифку с крутящимся кружочком загрузки.
+}
 
 var check = 0.5;
+var boolIsLoaded;
 
 function start() {
     /*document.body.innerHTML = "<canvas id=\"a\" width=\"300\" height=\"225\"></canvas>";
@@ -22,5 +26,7 @@ function start() {
     var b_context = b_canvas.getContext("2d");
     b_context.globalAlpha = check;
     b_context.fillRect(50, 25, 150, 100);
-    loadNeuro("NeuroFact/Neuro.txt");//Сейчас эта штука только для теста. Она задействует только консоль и выполняется асинхронно. При этом она очень тяжёлая. Всё остальное может запвисать на время выполнения. Вствляй свой код до неё.
+    loadNeuro("NeuroFact/Neuro.txt");
+    //Сейчас эта штука только для теста. Она задействует только консоль и выполняется асинхронно. При этом она очень тяжёлая. Всё остальное может запвисать на время выполнения. Вствляй свой код до неё.
+    loading();
 }

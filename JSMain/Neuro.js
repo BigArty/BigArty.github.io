@@ -26,6 +26,7 @@ function Layer(doubleArrArrFact, activFunc) {
 }
 
 function Neuro(stringData) {
+    alert("Загрузка закончена");
     var lines=stringData.split("\n");
     console.dir(lines);
 
