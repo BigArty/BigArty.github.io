@@ -10,12 +10,12 @@ function Neuron(doubleArrFact) {
     }
 }
 
-function Layer(doubleArrArrFact, activFunc) {
+function Layer(stringArrArrFact, activFunc) {
     var neurons=[];
-    for (var i=0; i<doubleArrArrFact.length;++i){
-        neurons[i]=new Neuron(doubleArrArrFact[i])
+    for (var i=0; i<stringArrArrFact.length;++i){
+        neurons[i]=new Neuron(stringArrArrFact[i])
     }
-    this.work=new function (doubleArrInput) {
+    this.work=function (doubleArrInput) {
         var doubleArrOut=[];
         doubleArrInput[doubleArrInput.length]=1;
         for(var i=0;i<neurons.length;++i){
@@ -27,19 +27,30 @@ function Layer(doubleArrArrFact, activFunc) {
 }
 
 function Neuro(stringData) {
-    var time=new Date();
-    console.log(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds()+" "+"Downloading completed. Starting init.");
+    console.log(time()+"Downloading completed. Starting init.");
     var lines=stringData.split("\n");
     var layers=[];
     var stringLayersLength=lines[1].split(" ");
+    var intCount=2;
     for (var i=0;i<+lines[0];++i){
         var stringArrArrLayerFact=[];
-        for (var j=0;j<+stringLayersLength[i+1];++j){
-
+        var intFunc=+lines[intCount].split(" ")[1];
+        var activFunc;
+        switch (intFunc){
+            case 1:
+                activFunc=function (doubleX) {
+                    return 2.0 / (1 + Math.exp(-x)) - 1;
+                }
         }
+        intCount++;
+        var stringArrArrFact=[];
+        for (var j=0;j<+stringLayersLength[i+1];++j){
+            stringArrArrFact[j]=lines[intCount].split(" ");
+            intCount++;
+        }
+        layers[i]=new Layer(stringArrArrFact, activFunc);
     }
-    console.dir(lines);
-
+    console.dir(time()+"Init finished");
 }
 
 var neuro;
