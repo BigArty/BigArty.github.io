@@ -17,6 +17,7 @@ function Layer(doubleArrArrFact, activFunc) {
     }
     this.work=new function (doubleArrInput) {
         var doubleArrOut=[];
+        doubleArrInput[doubleArrInput.length]=1;
         for(var i=0;i<neurons.length;++i){
             doubleArrOut[i]=neurons[i].out(doubleArrInput);
             doubleArrOut[i]=activFunc(doubleArrInput[i]);
@@ -30,16 +31,15 @@ function Neuro(stringData) {
     console.log(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds()+" "+"Downloading completed. Starting init.");
     var lines=stringData.split("\n");
     var layers=[];
-    for (var i=0;i<+layers[0];++i){
+    var stringLayersLength=lines[1].split(" ");
+    for (var i=0;i<+lines[0];++i){
+        var stringArrArrLayerFact=[];
+        for (var j=0;j<+stringLayersLength[i+1];++j){
 
+        }
     }
     console.dir(lines);
 
-}
-
-function test(stringData) {
-    var doubleTest=+stringData;
-    alert(doubleTest);
 }
 
 var neuro;
