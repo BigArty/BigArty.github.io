@@ -26,6 +26,8 @@ function start() {
     var b_context = b_canvas.getContext("2d");
     b_context.globalAlpha = check;
     b_context.fillRect(50, 25, 150, 100);
+    var time = new Date();
+    console.log(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds()+" "+"Start downloading");
     loadNeuro("NeuroFact/Neuro.txt");
     //Сейчас эта штука только для теста. Она задействует только консоль и выполняется асинхронно. При этом она очень тяжёлая. Всё остальное может запвисать на время выполнения. Вствляй свой код до неё.
     loading();

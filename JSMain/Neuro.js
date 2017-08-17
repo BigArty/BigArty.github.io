@@ -4,7 +4,7 @@ function Neuron(doubleArrFact) {
     this.out = function (doubleArrInput) {
         var out = 0;
         for (var i = 0; i < doubleArrInput.length; ++i) {
-            out += doubleArrInput[i] * doubleArrFact[i]
+            out += doubleArrInput[i] * (+doubleArrFact[i])
         }
 
     }
@@ -26,11 +26,23 @@ function Layer(doubleArrArrFact, activFunc) {
 }
 
 function Neuro(stringData) {
-    alert("Загрузка закончена");
+    var time=new Date();
+    console.log(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds()+" "+"Downloading completed. Starting init.");
     var lines=stringData.split("\n");
+    var layers=[];
+    for (var i=0;i<+layers[0];++i){
+
+    }
     console.dir(lines);
 
 }
+
+function test(stringData) {
+    var doubleTest=+stringData;
+    alert(doubleTest);
+}
+
+var neuro;
 
 function loadNeuro(fileNeuroFact) {
     $.ajax({
@@ -38,7 +50,7 @@ function loadNeuro(fileNeuroFact) {
         dataType: "text",
         async: true,
         success: function(msg){
-            Neuro(msg);
+            neuro = new Neuro(msg);
         }
     });
 
