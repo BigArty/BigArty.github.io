@@ -10,6 +10,7 @@ function time() {
 
 function fail() {
     check = 1;
+    console.dir(time() + "Fail");
 }
 function loading(){
     //Сюда нужно написать функцию вывода на экран слова загрузка. Желательно найти гифку с крутящимся кружочком загрузки.
@@ -18,6 +19,7 @@ function loading(){
 var check = 0.5;
 
 function start() {
+    console.dir(time() + "Start");
     /*document.body.innerHTML = "<canvas id=\"a\" width=\"300\" height=\"225\"></canvas>";
     var b_canvas = document.getElementById("a");
     var b_context = b_canvas.getContext("2d");
