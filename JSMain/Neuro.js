@@ -50,7 +50,14 @@ function Neuro(stringData) {
         }
         layers[i]=new Layer(stringArrArrFact, activFunc);
     }
-    console.dir(time()+"Init finished");
+    this.work=function(doubleArrArrInput){
+        for(var i=0; i<layers.length;++i){
+            doubleArrArrInput=layers[i].work(doubleArrArrInput);
+        }
+        return doubleArrArrInput;
+    };
+
+    console.log(time()+"Init finished");
 }
 
 var neuro;
