@@ -11,6 +11,7 @@ function time() {
 function fail() {
     check = 1;
     console.dir(time() + "Fail");
+    document.getElementById("main_content").innerHTML="<p>Что-то пошло не так. Пожалуйста, перезагрузите страницу.</p>";
 }
 function loading(){
     //Сюда нужно написать функцию вывода на экран слова загрузка. Желательно найти гифку с крутящимся кружочком загрузки.
