@@ -10,6 +10,29 @@ function getGroups(user_id) {
   return obj;
 }
 
+function saveUser(data, path) {
+  $.ajax({
+    url: path,
+    async: true,
+    dataType: 'text',
+    data: data,
+    method: 'POST'
+  });
+}
+
+function loadUser(path) {
+  var User;
+  $.ajax({
+    url: path,
+    async: true,
+    dataType: 'text',
+    success: function(data) {
+      User = data;
+    }
+  });
+  return User;
+}
+
 function Vectorize(user_id) {
 
 }
