@@ -9,5 +9,9 @@
     <orderEntry type="library" name="polyfill" level="application" />
     <orderEntry type="library" name="xd_connection" level="application" />
     <orderEntry type="library" name="jquery-3.2.1" level="application" />
+    <orderEntry type="library" name="es5-shim" level="application" />
+    <orderEntry type="library" name="polyfill" level="application" />
+    <orderEntry type="library" name="jquery-3.2.1" level="application" />
+    <orderEntry type="library" name="xd_connection" level="application" />
   </component>
 </module>

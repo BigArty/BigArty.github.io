@@ -5,15 +5,16 @@
 
 function time() {
     var time = new Date();
-    return time.getHours()+":"+time.getMinutes()+":"+time.getSeconds()+" ";
+    return time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() + " ";
 }
 
 function fail() {
     check = 1;
     console.dir(time() + "Fail");
-    document.getElementById("main_content").innerHTML="<p>Что-то пошло не так. Пожалуйста, перезагрузите страницу.</p>";
+    document.getElementById("main_content").innerHTML = "<p>Что-то пошло не так. Пожалуйста, перезагрузите страницу.</p>";
 }
-function loading(){
+
+function loading() {
     //Сюда нужно написать функцию вывода на экран слова загрузка. Желательно найти гифку с крутящимся кружочком загрузки.
 }
 
@@ -33,20 +34,22 @@ function start() {
     var b_context = b_canvas.getContext("2d");
     b_context.globalAlpha = check;
     b_context.fillRect(50, 25, 150, 100);
-    console.log(time()+"Start downloading");
+    console.log(time() + "Start downloading");
     loadNeuro("NeuroFact/Neuro.txt");
     //Сейчас эта штука только для теста. Она задействует только консоль и выполняется асинхронно. При этом она очень тяжёлая. Всё остальное может запвисать на время выполнения. Вствляй свой код до неё.
     loading();
 }
 
 function startWithoutNeuro() {
-  console.dir(time() + "Start");
-  var main = document.getElementById("main_content");
+    console.dir(time() + "Start");
+    var main = document.getElementById("main_content");
 
-  main.innerHTML = "<!--Писать тута.-->\n" +
-      "<canvas id=\"a\" width=\"300\" height=\"225\"></canvas>\n";
-  var b_canvas = document.getElementById("a");
-  var b_context = b_canvas.getContext("2d");
-  b_context.globalAlpha = check;
-  b_context.fillRect(50, 25, 150, 100);
+    main.innerHTML = "<!--Писать тута.-->\n" +
+        "<canvas id=\"a\" width=\"300\" height=\"225\"></canvas>\n";
+    var b_canvas = document.getElementById("a");
+    var b_context = b_canvas.getContext("2d");
+    b_context.globalAlpha = check;
+    b_context.fillRect(50, 25, 150, 100);
+    var data = saveUser("aedasda", 'Data/Vector.txt');
+    alert(data);
 }
